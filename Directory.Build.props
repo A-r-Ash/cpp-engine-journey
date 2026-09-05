@@ -1,5 +1,7 @@
 <Project>
-  <PropertyGroup>
-    <LanguageStandard>stdcpplatest</LanguageStandard>
-  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
 </Project>

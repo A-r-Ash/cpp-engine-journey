@@ -2,7 +2,7 @@
 
 ## Your current day
 
-- You are on Day: **Day 1 — Own Random, Own Luck**
+- You are on Day: Day 2 Strings_for_real
 - Started on: 5 sep 2026
 - Tagged milestones so far: `none` (first tag: `cpp-core` on Day 21)
 
@@ -19,7 +19,7 @@
 ## Phase 0 - C++ Core + Memory Bootcamp (Days 1-21)
 
 - [X] Day 1 — Own Random, Own Luck
-- [ ] Day 2 — Strings For Real
+- [X] Day 2 — Strings For Real
 - [ ] Day 3 — Overloads, Defaults, Ambiguity
 - [ ] Day 4 — Conversions, The Lying Compiler
 - [ ] Day 5 — Functions As Data
