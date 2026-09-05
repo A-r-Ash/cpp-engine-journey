@@ -19,6 +19,9 @@ Portfolio-first roadmap from Unity/C# programmer to junior **C++ / engine / tool
 3. Milestone days earn git tags: `cpp-core` (21), `math-v0.1` (28), `graphics-v1` (56),
    `engine-v1` (91), `voxel-freeze` (103), `engine-portfolio` / `cpp-mastery-lite` (140).
 
+**Rest days are scheduled, not failures:** three full days off (no code, no reading) land
+after Days 21, 70, and 119 — marked as REST DAY 1/2/3 in the tracker.
+
 The plan's full rules live in `plan/cpp-engine-master-plan-v3.5.md` (including the golden rule:
 *extend, don't skip*).
 

@@ -79,6 +79,7 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
 8. **Hired mid-plan?** Freeze a `hired-YYYY` tag, keep every code asset, fold the remaining days into weekends. The plan is your skill map, not a straitjacket.
 9. **The shortcut test** — whenever you're tempted to cut or rush something, ask: *"Could I explain this thing to an interviewer, including why I didn't do it?"* If yes, it's a safe scope cut. If no, it's debt — don't cut it. The plan's must-haves are the no-cut list.
 10. **Tools:** MSVC + CMake + Git + VS Code, deps pinned in Appendix B. Everything below runs on your machine.
+11. **Rest days are scheduled, not failures.** Three full days off — **no code, no reading, no networking** — land right after the heaviest pushes: **after Day 21, after Day 70, after Day 119**. They're marked in the tracker as REST DAY 1 / 2 / 3. Taking them is never a "buffer slip"; you resume exactly where you left off the next day.
 
 ---
 
@@ -252,7 +253,8 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Build:** Polish the capstone; write its README; tag `cpp-core`; write pitch v0.3 hooking ownership/memory work.
   - **Networking:** Action #1 — put the capstone repo public (or a gist) and post one paragraph about it on LinkedIn or a devlog.
   - **Interview:** Q#3 of 20 — e.g. "How would you detect a memory leak in a C++ program?"
-  - **Done:** Tag pushed, pitch written, one networking action done.
+  - **Retrospective:** Write 3 sentences into `docs/retrospectives.md` — what went wrong in Phase 0, what you'd change, what surprised you. (Portfolio-grade: this is how you show you actually work.)
+  - **Done:** Tag pushed, pitch written, one networking action done, retrospective written.
 
 ---
 
@@ -534,7 +536,8 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Build:** Tag `graphics-v1`; finalize pitch v0.8 (showcase → shadows/instancing/RenderDoc).
   - **Networking:** Action #2 — post the clip with a 2-line pitch (LinkedIn/devlog); comment on one Montréal game-dev post.
   - **Interview:** Q#8 of 20 — e.g. "What happens behind the scenes when you draw an instanced mesh?"
-  - **Done:** Tag + post live; you can answer why the scene is impressive in 30 seconds.
+  - **Retrospective:** 3 sentences into `docs/retrospectives.md` — what went wrong in Phase 1, what you'd change, what surprised you.
+  - **Done:** Tag + post live; you can answer why the scene is impressive in 30 seconds; retrospective written.
 
 ---
 
@@ -816,7 +819,8 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Build:** Tag `engine-v1`; write pitch v1.3 (playable game, clean systems, save/load, editor).
   - **Networking:** Action #3 — post the gameplay clip; message one Montréal dev/recruiter with a question about their stack.
   - **Interview:** Q#13 of 20 — e.g. "Design a tiny ECS storage. Why arrays over list-of-variants?"
-  - **Done:** Tag + post live; a stranger can play your game from the repo.
+  - **Retrospective:** 3 sentences into `docs/retrospectives.md` — what went wrong in Phase 2, what you'd change, what surprised you.
+  - **Done:** Tag + post live; a stranger can play your game from the repo; retrospective written.
 
 ---
 
@@ -945,8 +949,8 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Summary:** Pick your 60% with your target studios in mind — this is a menu, not a checklist.
   - **Learn:** Skim each menu option's primer page (5 minutes each): threads, allocators, DOD, templates, engine source, Unreal idioms.
   - **Roadmap:** menu options: concurrency · allocators · data-oriented design · template metaprogramming · reading engine source (Box2D/Godot/Doom3) · Unreal idioms
-  - **Build:** Choose 4 stack topics; write one line of rationale for each tied to a target studio.
-  - **Done:** The selection is written and justified; you feel the guilt of skipping the rest — that's the point.
+  - **Build:** Choose 4 stack topics; write one line of rationale for each tied to a target studio. Then spend 30 more minutes filling your **topic sheet**: for each of the 4, write its **primary source**, one **"why games care"** example, and one **interview-style question you would ask**. Add the new sources to Appendix D.
+  - **Done:** Selection written and justified; each topic has a source + a "why games care" example + one interview question on the sheet (this sheet powers Days 107–118); you feel the guilt of skipping the rest — that's the point.
 - **Day 107 — Menu Topic 1, Morning**
   - **In plain words:** First deep topic, day 1: the fundamentals + one working demo + "why games care."
   - **Summary:** Your first pick, deep end first.
@@ -1169,7 +1173,7 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Learn:** GitHub Actions "C++ build" quickstart (orphan tutorial in GitHub docs).
   - **Roadmap:** GitHub Actions · one-command release · tags · badge
   - **Build:** A CI workflow that builds and tests on push.
-  - **Done:** Green badge; fresh clone builds via CI.
+  - **Done:** Green badge; fresh clone builds via CI. If it eats the whole day, cut to a single green build badge and finish CI after Day 140 — never trade an application-send day for a badge.
 - **Day 136 — Testing Pass**
   - **In plain words:** Sweep your tests, and write the honest "what's tested and why" note for the README. Discipline displayed, not claimed.
   - **Summary:** Show the discipline behind the demo.
@@ -1206,7 +1210,8 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Roadmap:** final tag `engine-portfolio` / `cpp-mastery-lite` · final 3-sentence pitch · the continuing plan
   - **Build:** Tag everything; publish the final pitch and trailer; write your "next 90 days" plan (whichever direction the job search bends).
   - **Interview:** Q#20 of 20 — the hardest one from your bank, on the record.
-  - **Done:** Final tag + pitch live; next-90-days plan written; Day 1 of *tomorrow* defined.
+  - **Retrospective:** The final one into `docs/retrospectives.md` — what went wrong across all four phases, what you'd change, what surprised you. (4 retrospectives = the story of how you learned, and it closes the portfolio.)
+  - **Done:** Final tag + pitch live; next-90-days plan written; retrospective #4 written; Day 1 of *tomorrow* defined.
 
 ---
 
@@ -1223,7 +1228,7 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
 | 103 | `voxel-freeze` | Voxel module feature-frozen; v2-journal filled |
 | 140 | `engine-portfolio` / `cpp-mastery-lite` | Trailer + README + CI + tests green; 6–10 applications sent; final pitch published; next-90-days plan written |
 
-Habit checks that ride along every day: commit that stands alone · sanitizer session at least weekly · clang-tidy nearing clean · 20 interview questions done by Day 140 · 20 pitch refreshes banked.
+Habit checks that ride along every day: commit that stands alone · sanitizer session at least weekly · clang-tidy nearing clean · 20 interview questions done by Day 140 · 20 pitch refreshes banked · milestone retrospectives written (Days 21, 56, 91, 140).
 
 ## Appendix B — Toolchain and dependencies
 
@@ -1259,7 +1264,7 @@ Habit checks that ride along every day: commit that stands alone · sanitizer se
 
 ## Appendix D — The Sources Map (learn these once, reuse forever)
 
-The same handful of free resources power all 140 days. **Learn** = what to read/watch before you build. **Reference** = the dictionary to look things up in when stuck. **Practice** = where the "Build" tasks live.
+The same handful of free resources power all 140 days. **Learn** = what to read/watch before you build. **Reference** = the dictionary to look things up in when stuck. **Practice** = where the "Build" tasks live. **This map is a living document** — when you find a better source than one listed, swap it in and add a row.
 
 | Purpose | Source | How to use it |
 |---|---|---|
@@ -1267,7 +1272,7 @@ The same handful of free resources power all 140 days. **Learn** = what to read/
 | C++ reference | **cppreference.com** | The dictionary. Never read like a chapter; search the term, read the first lines. |
 | OpenGL course | **learnopengl.com** | THE graphics course — Phases 1–2 draw from it chapter-by-chapter. |
 | Math intuition | **3Blue1Brown — "Essence of Linear Algebra"** (YouTube) | Watch the matched episodes before Days 25–28. 20 min each. |
-| Physics-from-scratch | **K. Sun, "How to Create a Custom 2D Physics Engine"** (free archive series) | The core of Phase 2 physics. Follow chapters, write your own in your engine. |
+| Physics-from-scratch | **K. Sun, "How to Create a Custom 2D Physics Engine"** (free archive series); alternates: **Randy Gaul's Impulse Engine / "How to build a physics engine"** (tutsplus) and the **Box2D manual** | The core of Phase 2 physics. Follow chapters, write your own in your engine. If a K. Sun lesson doesn't click, switch teachers instantly — same physics, different voice, no guilt. |
 | Graphics debugging | **RenderDoc** (renderdoc.org) | Install, then Day 46 teaches you to capture your own frames. |
 | ImGui | **Dear ImGui** README + built-in demo | The demo IS the tutorial — run it and copy panels. |
 | CMake | **Modern CMake** (cliutils.gitlab.io/modern-cmake) | Chapters 1–4 + the presets page cover everything this plan needs. |
