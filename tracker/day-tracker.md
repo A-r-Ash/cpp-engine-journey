@@ -2,14 +2,15 @@
 
 ## Your current day
 
-- You are on Day: Day 2 Strings_for_real
+- You are on Day: Day 3 Function_Overloading
 - Started on: 5 sep 2026
 - Tagged milestones so far: `none` (first tag: `cpp-core` on Day 21)
 
 ## How to use this file (30 seconds, twice a day)
 
 1. **Morning:** change You are on Day to today's day number.
-2. **Evening:** when the day's `Done` line is truly true, tick its box below and commit.
+2. **Evening:** when the day's `Done` line is truly true, tick 
+its box below and commit.
 3. **Cadence days** (multiples of 7): also tick the interview Q# + pitch refresh - those are part of the day.
 4. Rule from the plan: *Extend, don't skip.* If a day takes two calendar days, it's still one day-number - tick it when it's done, not when the calendar says.
 5. **Rest days:** after Days 21, 70 and 119 there is a REST DAY row. On it: tick it, walk away - no new code. The next day opens with its Retrospective (Days 21/56/91/140) appended to docs/retrospectives.md.
@@ -20,7 +21,7 @@
 
 - [X] Day 1 — Own Random, Own Luck
 - [X] Day 2 — Strings For Real
-- [ ] Day 3 — Overloads, Defaults, Ambiguity
+- [X] Day 3 — Overloads, Defaults, Ambiguity
 - [ ] Day 4 — Conversions, The Lying Compiler
 - [ ] Day 5 — Functions As Data
 - [ ] Day 6 — Pick The Right Container
