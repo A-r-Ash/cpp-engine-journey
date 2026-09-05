@@ -12,7 +12,7 @@
 2. **Evening:** when the day's `Done` line is truly true, tick its box below and commit.
 3. **Cadence days** (multiples of 7): also tick the interview Q# + pitch refresh - those are part of the day.
 4. Rule from the plan: *Extend, don't skip.* If a day takes two calendar days, it's still one day-number - tick it when it's done, not when the calendar says.
-5. **REST DAY 1/2/3** (after Days 21, 70, 119) are scheduled, not slips — do nothing, tick nothing, close the laptop.
+5. **Rest days:** after Days 21, 70 and 119 there is a REST DAY row. On it: tick it, walk away - no new code. The next day opens with its Retrospective (Days 21/56/91/140) appended to docs/retrospectives.md.
 
 ---
 
@@ -34,12 +34,12 @@
 - [ ] Day 14 — Consolidation 2: OOP From Memory
 - [ ] Day 15 — Templates, Compressed
 - [ ] Day 16 — Exceptions, Compressed
-- [ ] Day 17 — Smart Pointers, The Ownership Toolkit
-- [ ] Day 18 — Memory Bootcamp 1: Pointer Deep Dive
+- [ ] Day 17 — Memory Bootcamp 1: Pointer Deep Dive
+- [ ] Day 18 — Smart Pointers, The Ownership Toolkit
 - [ ] Day 19 — Memory Bootcamp 2: Sanitizers + Leak Workflow
 - [ ] Day 20 — Capstone: Console Game With Ownership
 - [ ] Day 21 — Phase 0 Close: Pitch + Networking 1  / tag: cpp-core
-- **REST DAY 1** — full day off: no code, no reading, no networking (take it between Day 21 and Day 22)
+- [ ] **REST DAY 1** - after Day 21 (no new code, decompress)
 
 ## Phase 1 - Toolchain + Math + Graphics v1 (Days 22-56)
 
@@ -95,7 +95,7 @@
 - [ ] Day 68 — Data-Oriented Thinking, First Contact
 - [ ] Day 69 — Stability Pass: Race + Leak Sweep
 - [ ] Day 70 — Consolidation 8: Rigid Bodies From Memory
-- **REST DAY 2** — full day off: no code, no reading, no networking (take it between Day 70 and Day 71)
+- [ ] **REST DAY 2** - after Day 70 (no new code, decompress)
 - [ ] Day 71 — ECS, The Minimal Version
 - [ ] Day 72 — Transforms And A Scene Graph
 - [ ] Day 73 — Input Abstraction
@@ -148,7 +148,7 @@
 - [ ] Day 117 — Menu Topic 4, Deep
 - [ ] Day 118 — Menu Topic 4, Teach-Back
 - [ ] Day 119 — Consolidation 13: Teach One Topic + Justify The Menu
-- **REST DAY 3** — full day off: no code, no reading, no networking (take it between Day 119 and Day 120)
+- [ ] **REST DAY 3** - after Day 119 (no new code, decompress)
 - [ ] Day 120 — Interview Question Bank
 - [ ] Day 121 — Memory/Ownership Drills
 - [ ] Day 122 — CppQuiz/LeetCode Session 1

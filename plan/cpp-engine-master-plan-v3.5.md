@@ -93,6 +93,29 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
 **Nice-to-haves:** deep type-conversion trivia, advanced templates, exception-depth.
 **Failure mode:** If you're 2+ days behind by Day 18, cut Days 15–16 to half-days (templates + exceptions basics only) and protect Days 17–20 (smart pointers + memory bootcamp + capstone). If Day 21 arrives and the capstone is unfinished, ship it anyway and cut networking action #1 to a single LinkedIn connect.
 
+### Phase 0 → LearnCpp chapter map (skip nothing: click each day's lesson)
+
+LearnCpp has renumbered its chapters; the plan reads it non-linearly, so every important topic is still covered — ch 10–15 land on Days 3, 4, 6, 8–9, 12, 13, 17. Each day's `Learn:` line names the lesson; this table gives the exact chapter numbers and the direct link:
+
+| Day | LearnCpp chapter(s) | Direct link |
+|---|---|---|
+| 1 | ch 8.13–8.15 (random numbers — the 3 lessons after ch 8.12) | https://www.learncpp.com/cpp-tutorial/introduction-to-random-number-generation/ |
+| 2 | ch 5.7–5.9 (strings) | https://www.learncpp.com/cpp-tutorial/introduction-to-stdstring/ |
+| 3 | ch 11.1–11.5 (overloads, defaults) | https://www.learncpp.com/cpp-tutorial/introduction-to-function-overloading/ |
+| 4 | ch 10 (conversions, aliases, deduction) | https://www.learncpp.com/cpp-tutorial/implicit-type-conversion/ |
+| 5 | ch 20.6–20.7 (lambdas, captures) | https://www.learncpp.com/cpp-tutorial/introduction-to-lambdas-anonymous-functions/ |
+| 6 | ch 16 (std::vector) + ch 13.6–13.7 (enums, structs) | https://www.learncpp.com/cpp-tutorial/introduction-to-containers-and-arrays/ |
+| 8 | ch 14.2, 14.4 (classes) | https://www.learncpp.com/cpp-tutorial/introduction-to-classes/ |
+| 9 | ch 14.9–14.16 (constructors) | https://www.learncpp.com/cpp-tutorial/introduction-to-constructors/ |
+| 10 | ch 14.14–14.15 + 21.13 (copy semantics) | https://www.learncpp.com/cpp-tutorial/introduction-to-the-copy-constructor/ |
+| 11 | ch 22.1–22.4 (move semantics) | https://www.learncpp.com/cpp-tutorial/rvalue-references/ |
+| 12 | ch 15.4 (destructors, RAII) | https://www.learncpp.com/cpp-tutorial/introduction-to-destructors/ |
+| 13 | ch 24.1–24.2 + 25.1, 25.2, 25.6 (inheritance, virtual, vtable) | https://www.learncpp.com/cpp-tutorial/virtual-functions/ |
+| 15 | ch 11.6 + 13.13 (function + class templates) | https://www.learncpp.com/cpp-tutorial/function-templates/ |
+| 16 | ch 27.1–27.4 (exceptions) | https://www.learncpp.com/cpp-tutorial/basic-exception-handling/ |
+| 17 | ch 12.1–12.12 (references & pointers) + 17.8–17.9 (decay, arithmetic) | https://www.learncpp.com/cpp-tutorial/introduction-to-pointers/ |
+| 18 | ch 22.5–22.7 (unique_ptr, shared_ptr, weak_ptr) | https://www.learncpp.com/cpp-tutorial/stdunique_ptr/ |
+
 ### Week 1 (Days 1–7) — Finish Core C++
 
 - **Day 1 — Own Random, Own Luck**
@@ -133,7 +156,7 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
 - **Day 6 — Pick The Right Container**
   - **In plain words:** C++ gives you different boxes for data. Today you learn which box fits which job — the "list vs dictionary" decision Unity never makes you think about.
   - **Summary:** `array`, `vector`, `list`, `set`, `map`, `unordered_*` — and when each earns its place.
-  - **Learn:** LearnCpp — "Introduction to std::vector", "std::map", "std::set", "std::unordered_map". cppreference as dictionary.
+  - **Learn:** LearnCpp ch 16 — "Introduction to std::vector" (16.1–16.2), range-based for (16.8), resizing (16.10–16.11); plus ch 13.6 "Scoped enumerations" and 13.7 "Introduction to structs". LearnCpp has no std::map/set lessons — use cppreference as a dictionary for map/set/unordered_map when Days 20–21 and later phases need them.
   - **Roadmap:** `std::vector` · `std::map` · `std::unordered_map` · `std::set` · iteration idioms · big-O sanity
   - **Build:** Rewrite your Random game's scoring/loot as a map; time lookup vs vector scan casually.
   - **Done:** For any new need you can name the container and justify it.
@@ -187,7 +210,7 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
 - **Day 13 — Virtual Functions, The vtable Mental Model**
   - **In plain words:** In Unity, every component has virtual methods and the engine figures out which one to call. In C++ you control that dispatch with virtual — and today you finally see the table of function pointers behind it.
   - **Summary:** Polymorphism done C++ style, and when templates beat it.
-  - **Learn:** LearnCpp — "Virtual functions" and the lesson on vtable-style polymorphism.
+  - **Learn:** LearnCpp ch 24–25 — inheritance basics (24.1–24.2), "Virtual functions and polymorphism" (25.2), "The virtual table" (25.6). One page to start: https://www.learncpp.com/cpp-tutorial/virtual-functions/
   - **Roadmap:** `virtual` · `override` · `final` · vtable model · polymorphic vs templated dispatch
   - **Build:** A polymorphic shape demo; draw the vtable diagram, then confirm with the debugger.
   - **Done:** You pick polymorphism vs a template variant for a use case and can defend it.
@@ -217,20 +240,20 @@ The 406-day plan stretched superb pacing across 13.5 months, but the market won'
   - **Roadmap:** `throw` · `try`/`catch` · `noexcept` · exception safety levels · error codes as an alternative
   - **Build:** Rewrite one small program to use status codes, keep one using exceptions; compare honestly.
   - **Done:** You can justify your choice for a given function.
-- **Day 17 — Smart Pointers, The Ownership Toolkit**
-  - **In plain words:** "Who owns this object and when is it deleted?" Smart pointers answer that for you — one-owner (unique_ptr), shared-owner (shared_ptr). This replaces Unity's garbage collector by hand.
-  - **Summary:** Replace every raw owning pointer with the right smart pointer.
-  - **Learn:** LearnCpp — "Smart pointers", "std::unique_ptr", "std::shared_ptr".
-  - **Roadmap:** `std::unique_ptr` · `std::shared_ptr` · `std::weak_ptr` · `make_unique`/`make_shared` · ownership transfer
-  - **Build:** Migrate your mini-program to smart pointers; delete all raw `new`/`delete`.
-  - **Done:** Zero raw owning pointers remain; you can explain why `shared_ptr` should be rare.
-- **Day 18 — Memory Bootcamp 1: Pointer Deep Dive**
+- **Day 17 — Memory Bootcamp 1: Pointer Deep Dive**
   - **In plain words:** The pure pointers day: what an address is, how arrays secretly decay into them, and how to read an impossible-looking const pointer. You'll draw it and then verify each drawing in the debugger.
   - **Summary:** The pointer matrix that interviews test: decay, arithmetic, const, double pointers.
-  - **Learn:** LearnCpp — chapter "Compound types" (pointers) + the memory/address sections; then your debugger memory window.
+  - **Learn:** LearnCpp ch 12 "Compound types: references and pointers" — lessons 12.1–12.12 (especially "Introduction to pointers" 12.7, "Pointers and const" 12.9) + ch 17.8 "C-style array decay" + 17.9 "Pointer arithmetic and subscripting". One page to start: https://www.learncpp.com/cpp-tutorial/introduction-to-pointers/
   - **Roadmap:** pointer arithmetic · array decay · const-pointer matrix · pointer-to-pointer · the debugger memory window
   - **Build:** A pointer quiz taken to 100%; draw four memory diagrams *and* verify each against the debugger.
   - **Done:** Diagrams match the debugger for all four; you can explain decay to an interviewer.
+- **Day 18 — Smart Pointers, The Ownership Toolkit**
+  - **In plain words:** "Who owns this object and when is it deleted?" Smart pointers answer that for you — one-owner (unique_ptr), shared-owner (shared_ptr). This replaces Unity's garbage collector by hand.
+  - **Summary:** Replace every raw owning pointer with the right smart pointer.
+  - **Learn:** LearnCpp ch 22 "Move semantics and smart pointers" — "std::unique_ptr" (22.5), "std::shared_ptr" (22.6), and weak_ptr/cycles (22.7). One page to start: https://www.learncpp.com/cpp-tutorial/stdunique_ptr/
+  - **Roadmap:** `std::unique_ptr` · `std::shared_ptr` · `std::weak_ptr` · `make_unique`/`make_shared` · ownership transfer
+  - **Build:** Migrate your mini-program to smart pointers; delete all raw `new`/`delete`.
+  - **Done:** Zero raw owning pointers remain; you can explain why `shared_ptr` should be rare.
 - **Day 19 — Memory Bootcamp 2: Sanitizers + Leak Workflow**
   - **In plain words:** Today you learn the tools that catch memory bugs for you — the same tools studios use to prove a game doesn't leak. You will deliberately break a program and watch the tool name the bug.
   - **Summary:** Professional bug-hunting: ASan, CRT leak detection, clang-tidy.
