@@ -3,7 +3,7 @@
 ## Your current day
 
 - You are on Day: **Day 1 — Own Random, Own Luck**
-- Started on: _(date)_
+- Started on: 5 sep 2026
 - Tagged milestones so far: `none` (first tag: `cpp-core` on Day 21)
 
 ## How to use this file (30 seconds, twice a day)
@@ -18,7 +18,7 @@
 
 ## Phase 0 - C++ Core + Memory Bootcamp (Days 1-21)
 
-- [ ] Day 1 — Own Random, Own Luck
+- [X] Day 1 — Own Random, Own Luck
 - [ ] Day 2 — Strings For Real
 - [ ] Day 3 — Overloads, Defaults, Ambiguity
 - [ ] Day 4 — Conversions, The Lying Compiler
