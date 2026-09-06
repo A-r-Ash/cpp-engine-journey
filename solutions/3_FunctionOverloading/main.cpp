@@ -8,6 +8,8 @@ void print(int x)
 {
     std::cout << x ;
     std::cout << '\n';
+
+    
 }
 
 
@@ -24,12 +26,12 @@ void print(int x, int y)
     std::cout << '\n';
 }
 
-int main()
-{
-    print(1, 2);   // will resolve to print(int, int)
-    print(1, 2.5); // will resolve to print(int, double)
+//int main()
+//{
+    //print(1, 2);   // will resolve to print(int, int)
+    //print(1, 2.5); // will resolve to print(int, double)
     //print(2);      // ambiguous function call
-    print();
+   // print();
 
-    return 0;
-}
+   // return 0;
+//}

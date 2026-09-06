@@ -2,7 +2,7 @@
 
 ## Your current day
 
-- You are on Day: Day 3 Function_Overloading
+- You are on Day: Day 4 Conversions, The Lying Compiler
 - Started on: 5 sep 2026
 - Tagged milestones so far: `none` (first tag: `cpp-core` on Day 21)
 
