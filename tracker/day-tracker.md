@@ -22,7 +22,7 @@ its box below and commit.
 - [X] Day 1 — Own Random, Own Luck
 - [X] Day 2 — Strings For Real
 - [X] Day 3 — Overloads, Defaults, Ambiguity
-- [ ] Day 4 — Conversions, The Lying Compiler
+- [X] Day 4 — Conversions, The Lying Compiler
 - [ ] Day 5 — Functions As Data
 - [ ] Day 6 — Pick The Right Container
 - [ ] Day 7 — Consolidation 1: Rebuild Core From Memory
