@@ -1,23 +1,36 @@
 #include <iostream>
 
-namespace constants
-{
-    constexpr double pi{ 3.14159 };
-}
-
-double convertToRadians(double degrees)
-{
-    return degrees * constants::pi / 180;
-}
-
 int main()
 {
-    std::cout << "Enter a number of degrees: ";
-    double degrees{};
-    std::cin >> degrees;
+	short value{ 7 }; // &value = 0012FF60
+	short otherValue{ 3 }; // &otherValue = 0012FF54
 
-    double radians{ convertToRadians(degrees) };
-    std::cout << degrees << " degrees is " << radians << " radians.\n";
+	short* ptr{ &value };
 
-    return 0;
+	std::cout << &value << '\n';
+	std::cout << value << '\n';
+	std::cout << ptr << '\n';
+	std::cout << *ptr << '\n';
+	std::cout << '\n';
+
+	*ptr = 9;
+
+	std::cout << &value << '\n';
+	std::cout << value << '\n';
+	std::cout << ptr << '\n';
+	std::cout << *ptr << '\n';
+	std::cout << '\n';
+
+	ptr = &otherValue;
+
+	std::cout << &otherValue << '\n';
+	std::cout << otherValue << '\n';
+	std::cout << ptr << '\n';
+	std::cout << *ptr << '\n';
+	std::cout << '\n';
+
+	std::cout << sizeof(ptr) << '\n';
+	std::cout << sizeof(*ptr) << '\n';
+
+	return 0;
 }

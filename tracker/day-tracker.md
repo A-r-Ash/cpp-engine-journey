@@ -4,7 +4,7 @@
 
 - **Current LearnCpp position:** ch 11 (M7) — read through 11.5 default arguments
 - **Pace:** LearnCpp linear, your speed, your order (skips go in the Deferred Registry, never silently)
-- **Started LearnCpp sprawl from:** ch 8 finished, ch 9 (deferred), ch 10 completed
+- **Started LearnCpp sprawl from:** ch 8 finished, ch 9 (deferred), ch 10 completed, 11 completed
 - **Tags so far:** `none` (first tag: `cpp-core` when Phase 0's capstone ships)
 
 ## How to use this file (10 seconds, twice a session)
@@ -26,7 +26,7 @@
 - [X] M4 — ch 7 Scope/Duration/Linkage *(deferred — skip is written in the registry)*
 - [x] M5 — ch 8 Control Flow + Random Numbers *(covered — dice game exists)*
 - [X] M6 — ch 10 Conversions, Aliases, Deduction *(chapters read — tick when quiz + warning-free lab confirmed)*  / quiz + warning-free lab at 100%
-- [ ] M7 — ch 11 Overloading + Function Templates (in progress — through 11.5 default arguments)  / ⏱ Block GATE: Q#1 of 20 + pitch v0.1
+- [X] M7 — ch 11 Overloading + Function Templates (in progress — through 11.5 default arguments)  / ⏱ Block GATE: Q#1 of 20 + pitch v0.1
 - [ ] M8 — ch 12 References + Pointers (the pointer matrix)
 - [ ] M9 — ch 13 Enums, Structs, Aggregates  / ⏱ Block GATE: Q#2 of 20 + pitch v0.2
 - [ ] M10 — ch 14 Classes (C# culture shock)
