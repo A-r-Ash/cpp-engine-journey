@@ -1,36 +1,16 @@
 #include <iostream>
+#include <string>
+
+const std::string& getProgramName()
+{
+    const std::string programName{ "Calculator" }; // now a non-static local variable, destroyed when function ends
+
+    return programName;
+}
 
 int main()
 {
-	short value{ 7 }; // &value = 0012FF60
-	short otherValue{ 3 }; // &otherValue = 0012FF54
+    std::cout << "This program is named " << getProgramName(); // undefined behavior
 
-	short* ptr{ &value };
-
-	std::cout << &value << '\n';
-	std::cout << value << '\n';
-	std::cout << ptr << '\n';
-	std::cout << *ptr << '\n';
-	std::cout << '\n';
-
-	*ptr = 9;
-
-	std::cout << &value << '\n';
-	std::cout << value << '\n';
-	std::cout << ptr << '\n';
-	std::cout << *ptr << '\n';
-	std::cout << '\n';
-
-	ptr = &otherValue;
-
-	std::cout << &otherValue << '\n';
-	std::cout << otherValue << '\n';
-	std::cout << ptr << '\n';
-	std::cout << *ptr << '\n';
-	std::cout << '\n';
-
-	std::cout << sizeof(ptr) << '\n';
-	std::cout << sizeof(*ptr) << '\n';
-
-	return 0;
+    return 0;
 }
