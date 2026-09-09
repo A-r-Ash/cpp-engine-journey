@@ -2,7 +2,7 @@
 
 ## Where you are
 
-- **Current LearnCpp position:** ch 12 (M8) — read through 11.5 default arguments
+- **Current LearnCpp position:** ch 14 (M9) — read through 11.5 default arguments
 - **Pace:** LearnCpp linear, your speed, your order (skips go in the Deferred Registry, never silently)
 - **Started LearnCpp sprawl from:** ch 8 finished, ch 9 (deferred), ch 10 completed, 11 completed, 12, completed
 - **Tags so far:** `none` (first tag: `cpp-core` when Phase 0's capstone ships)

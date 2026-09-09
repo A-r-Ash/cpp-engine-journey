@@ -1,33 +1,35 @@
 #include <iostream>
 
-struct Point
+struct IntPair
 {
-    double x{};
-    double y{};
-};
+    int one{};
+    int two{};
 
-struct Triangle
-{
-    Point* a{};
-    Point* b{};
-    Point* c{};
+    void print()
+    {
+        std::cout << "Pair (" << one << ", " << two << ")" << '\n';
+    }
+
+    bool isEqual(IntPair i)
+    {
+        return (i == )
+    }
 };
 
 int main()
 {
-    Point a{ 1,2 };
-    Point b{ 3,7 };
-    Point c{ 10,2 };
+    IntPair p1{ 1, 2 };
+    IntPair p2{ 3, 4 };
 
-    Triangle tr{ &a, &b, &c };
-    Triangle* ptr{ &tr };
+    std::cout << "p1: ";
+    p1.print();
 
-    // ptr is a pointer to a Triangle, which contains members that are pointers to a Point
-    // To access member y of Point c of the Triangle pointed to by ptr, the following are equivalent:
+    std::cout << "p2: ";
+    p2.print();
 
-    // access via operator.
-    std::cout << (*(*ptr).c).y << '\n'; // ugly!
+    std::cout << "p1 and p1 " << (p1.isEqual(p1) ? "are equal\n" : "are not equal\n");
+    std::cout << "p1 and p2 " << (p1.isEqual(p2) ? "are equal\n" : "are not equal\n");
 
-    // access via operator->
-    std::cout << ptr->c->y << '\n'; // much nicer
+
+    return 0;
 }
