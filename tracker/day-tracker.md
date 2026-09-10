@@ -2,9 +2,9 @@
 
 ## Where you are
 
-- **Current LearnCpp position:** ch 14 (M9) — read through 11.5 default arguments
+- **Current LearnCpp position:** ch 15 (M11) — read through 15.5
 - **Pace:** LearnCpp linear, your speed, your order (skips go in the Deferred Registry, never silently)
-- **Started LearnCpp sprawl from:** ch 8 finished, ch 9 (deferred), ch 10 completed, 11 completed, 12, completed
+- **Started LearnCpp sprawl from:** ch 8 finished, ch 9 (deferred), ch 10–14 read through
 - **Tags so far:** `none` (first tag: `cpp-core` when Phase 0's capstone ships)
 
 ## How to use this file (10 seconds, twice a session)
@@ -28,9 +28,9 @@
 - [X] M6 — ch 10 Conversions, Aliases, Deduction *(chapters read — tick when quiz + warning-free lab confirmed)*  / quiz + warning-free lab at 100%
 - [X] M7 — ch 11 Overloading + Function Templates (in progress — through 11.5 default arguments)  / ⏱ Block GATE: Q#1 of 20 + pitch v0.1
 - [X] M8 — ch 12 References + Pointers (the pointer matrix)
-- [ ] M9 — ch 13 Enums, Structs, Aggregates  / ⏱ Block GATE: Q#2 of 20 + pitch v0.2
-- [ ] M10 — ch 14 Classes (C# culture shock)
-- [ ] M11 — ch 15 Destructors, static, RAII
+- [X] M9 — ch 13 Enums, Structs, Aggregates  / ⏱ Block GATE: Q#2 of 20 + pitch v0.2
+- [X] M10 — ch 14 Classes (C# culture shock)
+- [ ] M11 — ch 15 Destructors, static, RAII (in progress — through 15.5)
 - [ ] M12 — ch 16 std::vector + ch 17 std::array
 - [ ] M13 — ch 18 Iterators/Algorithms + ch 19 Dynamic Allocation  / ⏱ Block GATE: Q#3 of 20 + pitch v0.3
 - [ ] M14 — ch 20 Function Pointers + **Lambdas** (finally in order)
