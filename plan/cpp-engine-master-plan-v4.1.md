@@ -1,14 +1,18 @@
-# C++ → Game Engine Master Plan — LearnCpp-Paced Edition (v4.0)
+# C++ → Game Engine Master Plan — LearnCpp-Paced Edition (v4.1)
 
 A portfolio-first path for a Unity/C# programmer (DCS) targeting junior **C++ / engine / tools** roles in **Montréal** (Eidos-Montréal, Behaviour Interactive, Gameloft, Ludia, Ubisoft, WB Games, Frima).
 
 **Premise:** You are job-hunting *now*. Studios won't wait a year for a portfolio piece. So the goal is not the perfect engine; the goal is **a job** — and the engine you build is the evidence.
 
+## What changed in v4.1
+
+Two things: the **strict one-way street is gone** — you may choose a quick crash course through the remaining chapters instead of the linear march (see *Crash-Course Mode* below, which comes with its own AI teaching prompts); and it is now **v4.1**, not v4.0. Nothing about the must-have outcomes changed.
+
 ## The one change that made v4.0
 
 v3.5 was **topic-paced**: every day mapped to a LearnCpp chapter, but the mapping jumped around the book (Day 2 → ch 5, Day 3 → ch 11, Day 4 → ch 10, Day 5 → ch 20, Day 17 → ch 12). That non-linear jumping is what killed momentum — the plan's own "chapter map" bragged about it.
 
-**v4.0 swaps the spine. No more day-topics. Phase 0 now follows LearnCpp's own chapter order, one chapter at a time, in sequence.** Topics that previously got pulled forward (lambdas, pointers, classes, move semantics) stay in their natural chapter homes. `Day:` numbers only reappear in Phases 1–3, where the pacing is by project milestones and the "days" are effort-sessions, not calendar dates.
+**v4.0 swapped the spine. No more day-topics. Phase 0 followed LearnCpp's own chapter order, one chapter at a time, in sequence.** Topics that previously got pulled forward (lambdas, pointers, classes, move semantics) stay in their natural chapter homes. `Day:` numbers only reappear in Phases 1–3, where the pacing is by project milestones and the "days" are effort-sessions, not calendar dates.
 
 - **Phase 0 — LearnCpp Core, linear: ch 10.2 → ch 28** (in progress) → tag `cpp-core`
 - **Phase 1 — Toolchain + Math + Graphics v1** (gated on `cpp-core`) → tag `graphics-v1`
@@ -49,7 +53,7 @@ Every milestone has the same shape. Read it in this order:
 
 ## Rules of the road
 
-1. **A milestone is done when its `Done:` line is true. Extend, don't skip.** Never skip forward in chapter order. This is the whole point of v4.0.
+1. **A milestone is done when its `Done:` line is true. Extend, don't skip.** Two legal routes through Phase 0: the **linear march** (ch 10.2 → ch 28, one chapter at a time) or the **crash course** (ch 16 → ch 28 via the AI teaching prompts in the Crash-Course Mode section below). Pick one at any time — switching is allowed; only silently stalling is not.
 2. **Surgical cuts, not extensions.** Every phase lists must-haves vs nice-to-haves. If you fall a milestone behind by a block gate, cut the block's nice-to-haves *immediately* and protect the must-haves. (A cut is fine when you can name it and justify it — that's scope, not shortcuts.)
 3. **Buffer cap:** max **2 skipped chapters** in the core at any time, and every skip **must be written in the Deferred Registry** (see Phase 0). A deferred chapter is a decision, not a hole — you can come back to it, and 90% of the time a later chapter or build pulls it back in.
 4. **Cadence at block gates:** at the end of each milestone block — one C++ interview question answered in 5 minutes aloud, and one refresh of the 3-sentence pitch. Block gates in the core: after ch 11, ch 13, ch 17, ch 22. After that, each engine-phase consolidation is a gate. That's 20 interview answers + 20 pitch drafts by the finish line — *that* is your interview prep and portfolio copy.
@@ -60,7 +64,7 @@ Every milestone has the same shape. Read it in this order:
 9. **The shortcut test** — whenever you're tempted to cut or rush something, ask: *"Could I explain this thing to an interviewer, including why I didn't do it?"* If yes, it's a safe scope cut. If no, it's debt — cut nothing from the must-have list without passing this.
 10. **Tools:** MSVC + CMake + Git + VS Code, deps pinned in Appendix B. Everything below runs on your machine.
 11. **Rest days are scheduled, not failures.** Three full days off — **no code, no reading, no networking** — land right after the heaviest pushes: **after `cpp-core`, after the Phase 2 mid-point, after the Phase 3 menu block**. They're marked in the tracker as REST DAY 1 / 2 / 3. Taking them is never a slip; you resume exactly where you left off the next day.
-12. **One teacher, one order.** LearnCpp chapters run 1 → 28 in the book's own order. The moment two different sources fight about *what to learn next*, LearnCpp wins. You can still skip chapters that feel meh — but they go in the Deferred Registry.
+12. **One teacher, one order — unless you choose the crash course.** LearnCpp chapters run 1 → 28 in the book's own order. The moment two different sources fight about *what to learn next*, LearnCpp wins. In linear mode you can still skip chapters that feel meh — but they go in the Deferred Registry. In crash-course mode you compress the remaining chapters (16 → 28) using the AI prompts in the Crash-Course Mode section — the Deferred Registry still applies for anything you genuinely skip, not just reorder.
 
 ## Your role and my role (the coaching agreement)
 
@@ -1405,9 +1409,83 @@ Core gates (Q#1–4) · Phase 1 (Q#5–9) · Phase 2 (Q#10–14) · Phase 3 (Q#1
 
 ---
 
+# Crash-Course Mode (optional route) + AI Teaching Prompts
+
+**Two legal routes through Phase 0 — pick either, switch anytime:**
+- **Linear march (v4.0 default):** one LearnCpp chapter at a time, in book order.
+- **Crash course (v4.1):** compress **ch 16 → ch 28** into the topic map below + AI-led full lessons, while the **Day 24+ project track** keeps running as your build work. Same outcome, faster spine.
+
+Rules: the **Deferred Registry still applies** for anything genuinely skipped (a skip is a decision, written down). The Block Gates (Interview Q# + Pitch) still land where the tracker says. Switching back to linear is always legal.
+
+## The map — what you'll see ch 16 → 28 (your future index)
+
+| Ch | What it is | Little detail (recognize it later) | Resource when you hit it |
+|---|---|---|---|
+| **16** | `std::vector` + loops | The growable list. `push_back`, `size()`, `v[i]` vs `v.at(i)`, `std::sort`, range-based `for`. | LearnCpp ch 16 |
+| **17** | `std::array` | The fixed-size list (no grow, no pointer-decay). `size()` first class; sort via iterators. | LearnCpp ch 17 |
+| **18** | Iterators + algorithms | A common "walk the list" handshake (`begin`/`end`) so one algorithm works on any container: `find`, `count_if`, `sort`, `min_element`. | LearnCpp ch 18 |
+| **19** | Dynamic allocation | `new`/`delete` make objects on the heap; manual lifetime means leaks & dangling pointers. This is the "where does memory actually live" chapter. | LearnCpp ch 19 |
+| **20** | Function pointers + Lambdas | Code as a value: store a function, pass it around. Lambda = tiny anonymous function w/ captures `[=]` `[&]`. This is Unity delegates, in C++. | LearnCpp ch 20 |
+| **21** | Operator overloading | Teach `+`, `==`, `<`, `<<`, `[]` what they mean for YOUR types, so `monster1 < monster2` reads naturally. | LearnCpp ch 21 |
+| **22** | Move semantics + Smart pointers | Steal guts instead of copying (`std::move`); `unique_ptr`/`shared_ptr`/`weak_ptr` replace raw `new`. The memory-bootcamp crown. | LearnCpp ch 22 |
+| **23** | Object relationships | Composition (has-a), aggregation, association, dependency — when to nest objects vs just reference them. | LearnCpp ch 23 |
+| **24** | Inheritance | Base/derived classes (is-a), `protected`, constructor/destructor order. | LearnCpp ch 24 |
+| **25** | Virtual + vtable | `virtual`/`override`/`final`; the hidden table of function pointers that makes polymorphism work. | LearnCpp ch 25 |
+| **26** | Class templates | Write a class for any type (`Array<T>`) like `std::vector` itself; why templates live in headers. | LearnCpp ch 26 |
+| **27** | Exceptions | `try`/`catch`/`throw`, stack unwinding, when NOT to use exceptions (games!). | LearnCpp ch 27 |
+| **28** | File I/O | `ofstream`/`ifstream`, text vs binary so your game can save/load. | LearnCpp ch 28 |
+
+## Prompt P1 — Daily Lesson Generator (paste to ANY AI, once per session)
+
+Use this to get today's lesson in full detail. Keep this prompt text saved in a file and swap in the topic.
+
+```
+You are my personal C++ teacher. I am a Unity/C# programmer re-learning C++
+for game engines, job-hunting in Montréal. Assume I have the IQ of a 60-year-old
+non-programmer: be PATIENT, no skipped steps, no jargon ever used without being
+explained first.
+
+Teach today's topic: <TOPIC — e.g. "Day 24: Debugger Workbench — breakpoints,
+watch/locals, call stack" or "ch 16: std::vector and range-based for".>
+
+The lesson MUST be:
+1. Fundamentals first: what it is, why it exists, and where you'd use it in a
+   real game (not a toy example) — all before any code.
+2. Full detail, well organized: clear headings, simple numbered steps, code
+   snippets NOT longer than ~10 lines each, and EVERY snippet gets a plain-
+   language caption ("this line says: grab the 3rd item").
+3. ELI5 (explain-like-I'm-5) analogies for the hard parts — shelves, boxes,
+   mailing addresses, kitchens, anything from real life.
+4. A "catch yourself" section: the 3 most common mistakes AND how they look
+   when they appear.
+5. Finish with: (a) a glossary of every keyword used today, (b) 3 quick
+   exercises with answers hidden after a blank line, (c) "what to build today"
+   — a 15-minute build, (d) "where to go deeper": the exact LearnCpp /
+   cppreference / Microsoft Learn page for this topic.
+
+Style: warm, short sentences, no walls of text. Tables where a list would get
+long. If a concept needs a diagram, describe it in words I can draw.
+```
+
+## Prompt P2 — Roadmap / "am I missing anything?" prompt
+
+```
+I'm on my C++ journey: Unity/C# background. Give me the ROADMAP of the
+following chapter topics (ch 16 → ch 28 of LearnCpp) as a table: topic,
+1-line plain-explanation, and the single best free resource to learn it from.
+Then tell me which 5 of these I MUST know absolutely cold for a junior C++
+game-engine interview in Montréal.
+```
+
+## Day 24 onward — the day-by-day route
+
+The **Day 24+ project track** (Phase 1 of this plan) runs in parallel with the crash course. Each project day = open Prompt P1 with that day's topic. The LearnCpp chapters feed the build: e.g. Day 24 (Debugger Workbench) needs nothing new from LearnCpp; Day 25–28 (math) need ch 16–18 muscles; ch 20 lambdas land when the renderer starts filtering.
+
+---
+
 ## The last word
 
-**Continue where you are today, not next week.** The plan is now paced by LearnCpp — you are sitting at **ch 10.1**, and 10.2 is one click away. Read it, take the quiz, finish the last warning in your conversion lab, commit it, and come back for 10.3. No jumping ahead, no backtracking into meh chapters unless you put them in the Deferred Registry.
+**Continue where you are today, not next week.** Two gears are running: the **LearnCpp spine** (you're at **ch 15** — M11 destructors/RAII, next 15.6) and the **Phase 1 project track** (today is **Day 24 — Debugger Workbench**, running alongside via the crash-course mode). Pick one gear per session, drift freely between them — the tracker's `Current:` line tells you which is which. No backtracking into meh chapters unless you put them in the Deferred Registry.
 
 And when a Roadmap line still makes you go *"wtf is that?"* — that's not a failure of you. It's the signal to read the plain-words line again, open the LearnCpp lesson, and search the term. Every one of those terms was intimidating to every C++ programmer in the world once. The difference is only that you have a chapter, a quiz, and a build task pointed at it.
 

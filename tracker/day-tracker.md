@@ -1,4 +1,4 @@
-# Milestone Tracker — C++ → Game Engine Master Plan (v4.0, LearnCpp-Paced)
+# Milestone Tracker — C++ → Game Engine Master Plan (v4.1, LearnCpp-Paced)
 
 ## Where you are
 
@@ -44,8 +44,8 @@
 
 ## Phase 1 — Toolchain + Math + Graphics v1 (gated on `cpp-core`) → tag `graphics-v1`
 
-- [ ] Day 22 — CMake From Zero
-- [ ] Day 23 — Git Workflow You'll Use Daily
+- [x] Day 22 — CMake From Zero
+- [x] Day 23 — Git Workflow You'll Use Daily
 - [ ] Day 24 — Debugger Workbench
 - [ ] Day 25 — Math: Vec2/Vec3
 - [ ] Day 26 — Math: Mat4
