@@ -1,28 +1,26 @@
-# C++ Game Engine Master Plan — LearnCpp-Paced (v4.1)
+# CG → Engine Master Plan
 
-Portfolio-first roadmap from Unity/C# programmer to junior **C++ / engine / tools** roles.
+Portfolio-first path from Unity/C# to junior **C++ / engine / tools** roles — ending in ONE thing: your own game engine.
 
-**The one rule that defines v4.1:** Phase 0 follows LearnCpp's own chapter order, one chapter at a time — no jumping — *unless you choose the crash course* (ch 16 → 28 via the AI teaching prompts in the plan). Skipped chapters are recorded in the tracker's Deferred Registry, never silently dropped.
+## The one rule
+
+**Build-first.** Skim a lesson, build the artifact, tick the tracker. No hours of pre-reading. Every session ends with something working.
 
 ## Layout
 
-| Path      | What lives here |
-|-----------|-----------------|
-| `plan/`   | The single master plan — `cpp-engine-master-plan-v4.1` (includes AI teaching prompts + crash-course mode) |
-| `tracker/`| `day-tracker.md` — scorecard per milestone; header shows the current chapter (`ch 10.1 ✓ → next 10.2`) |
-| `solutions/` | Labs and builds — one folder per day/milestone |
-| `docs/`   | Devlog, interview bank, pitch refresh (added through the phases) |
+| Path | What lives here |
+|------|-----------------|
+| `plan/master-plan.md` | The order: goal, rules, 8 sections (Required → Description → Why → Without → Lessons → Steps) |
+| `plan/resources.md` | Everything to learn from — by section (Primary / Reference / Practice) |
+| `plan/glossary.md` | Every term the plan uses, defined with its explanation next to it |
+| `plan/employment-plan.md` | Targets, portfolio bar, applications, networking, interview bank (filled at Section 8) |
+| `tracker/track.md` | The record: current position, scorecard per section, done↔date↔commit log |
+| `solutions/` | The builds — one project per milestone |
+| `docs/` | Journal, notes, applications tracker |
 
 ## Ritual (10 seconds, twice a session)
 
-1. **Before you read:** confirm the tracker's `Current:` line matches the chapter you're on.
-2. **When a milestone's `Done` line is true** (chapter read, quiz done, build compiles warning-free), tick it and commit:
-   `git add -A` then `git commit -m "M<x>: <what you built>"`, then `git push`.
-3. Cadence rides on block gates: interview Q# + pitch refresh at the end of each milestone block.
-4. Milestone tags: `cpp-core` (Phase 0 capstone), `math-v0.1`, `graphics-v1`, `engine-v1`, `voxel-freeze`, `engine-portfolio` / `cpp-mastery-lite`.
+1. **Before you start:** confirm `tracker/track.md`'s Now-line matches what you're working on.
+2. **When a Step's `Done:` conditions are true** — tick it and log it (`git add -A`; `git commit -m "S<sec>-<step>: <what you built>"`), wrap up in `docs/journal.md`.
 
-**Rest days are scheduled, not failures:** three full days off (no code, no reading) land after the `cpp-core` capstone, after the Phase 2 heavy stretch, and after the Phase 3 menu block — marked REST DAY 1/2/3 in the tracker.
-
-The full rules live in `plan/cpp-engine-master-plan-v4.1.md` (including the golden rule: *extend, don't skip* — with a legal crash-course route through ch 16 → 28).
-
-You're at **ch 10.1 — Conversions, Aliases, Deduction**. Next: 10.2.
+Current position lives in the tracker, not here.
