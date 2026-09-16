@@ -10,7 +10,7 @@ Every term in bold lives in `plan/glossary.md`. One session, one Step, in order.
 
 ### Section 1 — C++ _(Required: —)_
 
-- [ ] Lessons: ch 15–22 (classes, move, smart pointers, containers) + memory hygiene
+- [X] Lessons: ch 15–22 (classes, move, smart pointers, containers) + memory hygiene
 - [ ] **Step 1.1** LearnCpp ch 15–22, quizzes
 - [ ] **Step 1.2** LearnCpp ch 23–28, quizzes
 - [ ] **Step 1.3** Capstone "The Lost Key" (win + lose + save/load, leak-free)
