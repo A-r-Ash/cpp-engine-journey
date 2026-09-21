@@ -161,7 +161,7 @@ int main()
 		// Bind the VAO so OpenGL knows to use it
 		glBindVertexArray(VAO);
 		// Draw primitives, number of indices, datatype of indices, index of indices
-		glDrawElements(GL_TRIANGLE_STRIP, 16, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLE_STRIP, 20, GL_UNSIGNED_INT, 0);
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
 		// Take care of all GLFW events
