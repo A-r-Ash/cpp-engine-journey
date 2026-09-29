@@ -28,6 +28,8 @@ int main()
 
 	printArray(array, sizeof(array) / sizeof(array[8]));
 
+	std::cout << "Done";
+
 
 
 
